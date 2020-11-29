@@ -29,7 +29,7 @@ child_command = ' '.join(child_args)
 
 def log(msg):
     if DEBUG:
-        print >>sys.stderr, "memusg: {}".format(msg)
+        sys.stderr.write("memusg: {}\n".format(msg))
 
 def get_vsize(sid):
     vsize = 0
